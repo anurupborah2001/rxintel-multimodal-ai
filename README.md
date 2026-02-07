@@ -104,8 +104,6 @@ Parsed as JSON
 
 Validated against the DrugInfo schema
 
-
-
 ## Architecture Diagram
 
 The following diagrams illustrate how RxIntel Multimodal AI aggregates trusted medical data and uses an LLM to produce validated, schema-safe drug intelligence.
@@ -122,6 +120,55 @@ The following diagrams illustrate how RxIntel Multimodal AI aggregates trusted m
 
 
 This design makes **RxIntel Multimodal AI** reliable, auditable, and production-ready for medical knowledge applications.
+
+
+## Running the project
+
+This project was runned on python 3.11.8
+
+
+1. Create a virutual environment
+
+macOS:
+
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+Windows:
+
+- Install virtual environment
+
+```
+pip install virtualenv
+```
+
+- Create a virtual environment
+
+```
+python -m venv venv
+```
+
+- Activate the virtual environment
+
+```
+venv\Scripts\activate
+```
+
+
+2. Install the packages
+
+```
+pip install -r requirements.txt
+```
+
+3. Running the project
+
+```
+streamlit run app.py
+```
+
 
 ## Appendix
 
